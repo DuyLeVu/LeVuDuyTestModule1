@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+</head>
+<body>
+<script>
+    let numArr = [];
+
+    function checkChar(num, numArr) {
+        let flag = false;
+        for (i = 0; i < numArr.length; i++) {
+            if (numArr[i] === num) {
+                flag = true;
+                break;
+            } else flag = false;
+        }
+        if (flag) return 'Phan tu co trong mang va o vi tri ' + numArr.indexOf(numArr[i]);
+        else return 'Phan tu khong co trong mang';
+    }
+        let numElementOfArray = parseInt(prompt('Nhap so phan tu cua mang'));
+        for (i = 0; i<numElementOfArray; i++){
+            numArr[i] = parseInt(prompt('Nhap phan tu thu '+i+ ':'));
+        }
+        let num = parseInt(prompt('Enter Num: '));
+        let result = checkChar(num, numArr);
+        document.write(result);
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai3</title>
+</head>
+<body>
+<script>
+    let str = prompt('Enter string: ');
+    str.toLowerCase();
+    let newArr = str.toLowerCase().split('');
+    // console.log(newArr);
+
+    function checkArr(newArr) {
+        for (i = 0; i < newArr.length; i++) {
+            if (newArr[i] === 'a' || newArr[i] === 'o' || newArr[i] === 'e' || newArr[i] === 'u' || newArr[i] === 'i') {
+            return true;
+            }
+            else return false;
+        }
+    }
+    console.log(checkArr(newArr));
+
+</script>
+</body>
+</html>

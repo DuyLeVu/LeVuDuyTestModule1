@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai1</title>
+</head>
+<body>
+
+<script>
+    function ptBacNhat(soA, soB){
+        if (soA === 0) {
+            if(soB === 0) return 'Phuong trinh co vo so nghiem';
+            else return 'Phuong trinh vo nghiem';
+        } else {
+            return -soB / soA;
+        }
+    }
+    let soA = 5;
+    let soB = 8;
+    let ptNghiem = ptBacNhat(soA,soB);
+    console.log(ptNghiem)
+
+</script>
+</body>
+</html>
